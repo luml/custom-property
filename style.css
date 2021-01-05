@@ -1,0 +1,27 @@
+body {
+    background-color: #333;
+}
+
+.modules {
+    height: 100vh;
+
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.module-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.module-item:nth-child(odd) {
+    background: #fff;
+    color:  #F73859;
+}
+.module-item:nth-child(even) {
+    background: #F73859;
+    color: #fff;
+}

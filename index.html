@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom properties</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- for practice css custom property -->
+    <div class="modules">
+        <div class="module-item">20%</div>
+        <div class="module-item">40%</div>
+        <div class="module-item">60%</div>
+        <div class="module-item">80%</div>
+        <div class="module-item">100%</div>
+    </div>
+
+    <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty("--vh", `${vh}px`);
+        });
+    </script>
+</body>
+
+</html>
