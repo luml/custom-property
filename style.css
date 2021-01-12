@@ -1,5 +1,5 @@
 body {
-    background-color: #333;
+    background-color: var(--seasonal-bg);
 }
 
 .modules {
@@ -18,10 +18,10 @@ body {
 }
 
 .module-item:nth-child(odd) {
-    background: #fff;
-    color:  #F73859;
+    background: var(--seasonal-hldark);
+    color:  var(--seasonal-bgdark);
 }
 .module-item:nth-child(even) {
-    background: #F73859;
-    color: #fff;
+    background: var(--seasonal-bgdark);
+    color: var(--seasonal-hldark);
 }
